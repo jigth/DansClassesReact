@@ -1,16 +1,10 @@
-import React from 'react'
+import React, {Component} from 'react';
 
-const Footer = () => {
-    return(
-      <div class="fixed-bottom navbar-light bg-light">
-        <a class="navbar-brand" href="#">Informacion de compañia</a>
-      </div>
+export default function Footer(props) {
+    return (
+        <div class="fixed-bottom navbar-dark bg-primary">
+            <a class="navbar-brand" href="#">Informacion de contacto</a>
+        </div> 
     )
 }
 
-export default Footer;
-/*
-function Footer() {
-
-}
-*/

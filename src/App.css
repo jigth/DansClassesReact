@@ -1,10 +1,8 @@
 .App {
   text-align: center;
+  background-color: orange;
 }
 
-.prj-imagen{
-  width: 30px;
-  height: 30px;
-  border-radius: 12px;
-  background-color: green;
+.Main {
+  color: gray;
 }

@@ -1,4 +1,13 @@
-.item-menu {
-    color:white;
+.menu-item {
+    color: cornflowerblue;
     margin-left: 20px;
+}
+
+.menu-item:hover {
+    font-weight: 700;
+    color: white;
+}
+
+.menu-item:visited {
+    text-decoration: to-upper-case($string: initial);
 }

@@ -1,16 +1,16 @@
 import React from 'react'
 
-export function Comentario(props){
+export const Comentario = (props) => {
   return (
     <div>
       <Foto nombre_imagen="Mi fotico"/>
-      <label>Nombre del usuario:{props.nombre}</label>
-      <button> Enviar </button>
+      <label>Nombre del usuario: {props.nombre}</label><br />
+      <button> Enviar </button><br />
     </div>
   );
 }
 
-export const Foto = (props) => {
+function Foto (props) {
   return (
     <div className="card">
       <div className="prj-imagen">

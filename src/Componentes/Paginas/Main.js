@@ -1,26 +1,25 @@
-import React,{Component} from 'react'
-import {Route, BrowserRouter as Router}  from 'react-router-dom'
-import Inicio from './Inicio'
-import Register from './Register'
+import React, {Component} from 'react'
+import { Route, BrowserRouter } from 'react-router-dom'
+import Inicio from './Inicio';
+import Register from './Register';
 
-const Navegacion = (
-  <Router>
-    <Route path="/Login" component={Inicio} />
-    <Route path="/Registro" component={Register} />
-  </Router>
-)
 
-class Main extends Component{
+export default class Main extends Component {
+    constructor(props) {
+        super(props);  // If this class is used to render content with props
+        this.routes = (
+            <BrowserRouter>
+                <Route path='/Login' component={Inicio}></Route>
+                <Route path='/Registro' component={Register}></Route>
+            </BrowserRouter>
+        )
+    }
 
     render(){
-      return (
-        <div className="main-container">
-           {
-             Navegacion
-           }
-        </div>
-      )
+        return (
+            <div className=' main-container'>
+                {this.routes}
+            </div> 
+        )
     }
 }
-
-export default Main;

@@ -9,6 +9,7 @@ class Inicio extends Component{
     }
 
     this.actualizarContador = this.actualizarContador.bind(this);
+    this.digitoRandom = this.digitoRandom.bind(this);
   }
 
   componentDidMount(){
@@ -19,12 +20,16 @@ class Inicio extends Component{
     this.setState({contador:this.state.contador+1})
   }
 
+  digitoRandom() {
+    this.setState({contador: this.props.digitoRandom()})
+  }
+
   render(){
     return (
       <div>
-        
         <div className="alert alert-primary">
           <button onClick={this.actualizarContador}>Incrementar</button>
+          <button onClick={this.digitoRandom}> DigitoRandom </button>
           <label> Contador: {this.state.contador} </label>
         </div>
       </div>

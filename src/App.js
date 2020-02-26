@@ -1,24 +1,22 @@
 import React from 'react';
-import './Sass/main.scss';
-import Header from './Componentes/Header'
-import Footer from './Componentes/Footer'
-import Main from './Componentes/Paginas/Main'
-
-const miFucnion = (valor) => {
-  return valor*2
-}
+import './Sass/main.scss'
+import {Comentario, Foto} from './Componentes/ComponentesFuncionales.js';
+import Inicio from './Componentes/Paginas/Inicio.js';
+import Header from './Componentes/Header.js';
+import Footer from './Componentes/Footer.js'
+import Main from './Componentes/Paginas/Main.js'
 
 function App() {
   return (
-    <div className="App">
-      {/* <Comentario nombre="juan"/>
-      <Comentario nombre="daniel"/>
-      <Inicio multiplicar={miFucnion}/> */}
-      <Header nombre="Mi Aplicación" />
+    <div class="App">
+      
+      <Header nombre="Dan's Classes" />
       <Main />
       <Footer />
 
-    </div>
+      
+  </div>
+    
   );
 }
 
