@@ -1,2 +1,4 @@
+// Compiles to CSS because it doesn't have an underscore
 @import './Layout/_container';
-@import './Layout/header';
+@import './Layout/_header';
+@import './Componentes/_card'

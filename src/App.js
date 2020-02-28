@@ -8,7 +8,7 @@ import Main from './Componentes/Paginas/Main.js'
 
 function App() {
   return (
-    <div class="App">
+    <div className="App">
       
       <Header nombre="Dan's Classes" />
       <Main />

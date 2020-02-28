@@ -20,3 +20,13 @@ function Foto (props) {
     </div>
   )
 }
+
+export const InformacionPersona = (props) => {
+  return (
+    <div className="">
+      <label>Nombre {props.nombre}</label>
+      <label>Correo {props.correo}</label>
+      <img alt="" src={props.imagen}></img>
+    </div>
+  )
+}
