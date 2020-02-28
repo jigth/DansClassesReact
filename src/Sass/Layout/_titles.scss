@@ -1,0 +1,15 @@
+.title-base {
+    margin: auto;
+    padding: 15px;
+}
+
+.title-red {
+    @extend .title-base;
+    color: red;
+}
+
+
+.title-green {
+    @extend .title-base;
+    color: green;
+}

@@ -9,7 +9,6 @@ import Main from './Componentes/Paginas/Main.js'
 function App() {
   return (
     <div className="App">
-      
       <Header nombre="Dan's Classes" />
       <Main />
       <Footer />

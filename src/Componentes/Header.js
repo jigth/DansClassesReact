@@ -8,6 +8,8 @@ export default class Header extends Component {
                 <a className="navbar-brand" href="/">{this.props.nombre}</a>
                 <a className='menu-item' href='/Login'>Iniciar Sesión</a>
                 <a className='menu-item' href='/Registro'>Registrarse</a>
+                <a className='menu-item' href='/Contador'>Contador</a>
+                <a className='menu-item' href='/PokeAPI'>Poke API</a>
             </nav>
         )
     }
